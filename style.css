@@ -1,0 +1,41 @@
+body {
+  background-color: #a8e6cf;
+}
+#id {
+  color: #db3056;
+}
+hr {
+  background-color: #a8e6cf;
+  border-style: dotted none none none;
+  border-color: #ff4b5c;
+  border-width: 10px;
+  width:180px;
+}
+
+.img1 {
+  height:15%;
+  width:10%;
+}
+
+#rom {
+  font-size: 40pt;
+}
+#rom {
+  font-size: 15pt;
+}
+
+.mas:hover {
+  color:violet;
+}
+
+#verd {
+  font-family:Verdana;
+}
+
+#it {
+  font-style: italic;
+}
+
+.weg {
+  font-weight: bolder;
+}
