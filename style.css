@@ -1,8 +1,49 @@
 body {
   background-color: #a8e6cf;
 }
-#id {
+nav {
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+header {
+  height: auto;
   color: #db3056;
+  text-align: center;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  margin: 150px 30px 150px 30px;
+}
+footer {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width:800px;
+}
+.fl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.fl2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 2;
 }
 hr {
   background-color: #a8e6cf;
@@ -38,4 +79,14 @@ hr {
 
 .weg {
   font-weight: bolder;
+}
+.vol {
+  color:#ff4b5c;
+}
+#line {
+  position: relative;
+  height: 400px;
+  width: 0px;
+  border: solid;
+  border-color: red;
 }
