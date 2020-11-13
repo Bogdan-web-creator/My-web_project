@@ -5,140 +5,543 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🌏 lab_4_part_4.2</title>
     <style>
-       body {
-         margin:0;
-       }
-       nav {
-         width: 1903px;
-         height: 947px;
-         background-image: url(images/colorado-mountains-4k-2560x1440.jpg);
-         background-size: 1920px 947px;
-       }
-       section {
-         height: 1050px;
-         margin: 150px;
-       }
-       #prefooter {
-         height: 60px;
-         background-color: #495464;
-       }
-       footer {
-         height: 200px;
-         background-color: #212121;
-       }
-       #fn {
-         top:10px;
-         color:white;
-         margin:20px;
-         display: inline;
-         position: relative;
-         font-size: 40pt;
-       }
-      #log {
-        flex-direction: row-reverse;
-        font-size: 12pt;
-        color:white;
-        display: inline-flex;
-        top:20px;
-        left:850px;
-        position: relative;
-        width: 700px;
-        justify-content: space-around;
-        font-family: sans-serif;
+    body {
+      margin:0;
+    }
+    nav {
+      width: 1903px;
+      height: 947px;
+      background-image: url(images/colorado-mountains-4k-2560x1440.jpg);
+      background-size: 1920px 947px;
+    }
+    section {
+      height: 1050px;
+      margin: 150px;
+    }
+    #prefooter {
+      height: 60px;
+      background-color: #495464;
+    }
+    footer {
+      height: 200px;
+      background-color: #212121;
+    }
+    #fn {
+      top:10px;
+      color:white;
+      margin:20px;
+      display: inline;
+      position: relative;
+      font-size: 40pt;
+    }
+   #log {
+     flex-direction: row-reverse;
+     font-size: 12pt;
+     color:white;
+     display: inline-flex;
+     top:20px;
+     left:850px;
+     position: relative;
+     width: 700px;
+     justify-content: space-around;
+     font-family: sans-serif;
 
-      }
-      #un {
-        margin:10px;
-        border:solid;
-        border-radius: 15px;
-        border-color: white;
-        border-width: 2px;
-        padding: 4px;
-      }
-      #cn1 {
-        display: inline-block;
-        position: relative;
-        font-size: 24pt;
-        color: white;
-        right: 220px;
-        top:350px;
-      }
-      #cn2 {
-        display: inline-block;
-        position: relative;
-        font-size: 70pt;
-        font-family: sans-serif;
-        color:white;
-        left:550px;
-        top:250px;
-      }
-      #cn3 {
-        display: inline-block;
-        text-align: center;
-        width: 160px;
-        position: relative;
-        font-size: 14pt;
-        font-family: sans-serif;
-        color: white;
-        border-radius: 50px;
-        background-color: #8bcdcd;
-        left:70px;
-        top:330px;
-      }
-      #prefooter {
-        font-size: 14pt;
-        color: grey;
-        font-family: sans-serif;
-        text-align: center;
-        padding: 1px;
-      }
-      footer{
-        display: flex;
-        color:grey;
-        font-family: sans-serif;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-      }
-      #sec {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        text-align: center;
-        font-size: 18pt;
-        line-height: 2;
-        margin-bottom: 100px;
-      }
-      #go {
-        margin-top:0px;
-      }
-      #sec2 {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-end;
-      }
-      #sec3 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      #sec4 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      .cl {
-        font-family: sans-serif;
-        color:#8bcdcd;
-      }
-      .hd {
-        line-height: 2;
-        font-size: 14pt;
-        text-align: center;
-      }
+   }
+   #un {
+     margin:10px;
+     border:solid;
+     border-radius: 15px;
+     border-color: white;
+     border-width: 2px;
+     padding: 4px;
+   }
+   #cn1 {
+     display: inline-block;
+     position: relative;
+     font-size: 24pt;
+     color: white;
+     right: 220px;
+     top:350px;
+   }
+   #cn2 {
+     display: inline-block;
+     position: relative;
+     font-size: 70pt;
+     font-family: sans-serif;
+     color:white;
+     left:550px;
+     top:250px;
+   }
+   #cn3 {
+     display: inline-block;
+     text-align: center;
+     width: 160px;
+     position: relative;
+     font-size: 14pt;
+     font-family: sans-serif;
+     color: white;
+     border-radius: 50px;
+     background-color: #8bcdcd;
+     left:70px;
+     top:330px;
+   }
+   #prefooter {
+     font-size: 14pt;
+     color: grey;
+     font-family: sans-serif;
+     text-align: center;
+     padding: 1px;
+   }
+   footer{
+     display: flex;
+     color:grey;
+     font-family: sans-serif;
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+   }
+   #sec {
+     display: flex;
+     flex-direction: column;
+     position: relative;
+     text-align: center;
+     font-size: 18pt;
+     line-height: 2;
+     margin-bottom: 100px;
+   }
+   #go {
+     margin-top:0px;
+   }
+   #sec2 {
+     display: flex;
+     justify-content: space-around;
+     align-items: flex-end;
+   }
+   #sec3 {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+   #sec4 {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+   .cl {
+     font-family: sans-serif;
+     color:#8bcdcd;
+   }
+   .hd {
+     line-height: 2;
+     font-size: 14pt;
+     text-align: center;
+   }
       @media (max-width:1460px){
+        #fn {
+          font-size: 18pt;
+          left: -5px;
+        }
+        #un {
+          margin-top: 4px;
+        }
+        #log {
+          position: relative;
+          top: 0px;
+          font-size: 10pt;
+          left:600px;
+          width:660px;
+          justify-content: space-around;
+        }
+
+        #sec {
+          width: 1460px;
+          font-size: 15pt;
+          text-align: center;
+          left:-150px;
+          margin-top: -70px;
+        }
+        #sec2{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: -60px;
+        }
+        #sec4{
+          margin-top: 20px;
+        }
+        .cl {
+          font-size: 15pt;
+        }
+        .hd {
+          font-size: 13pt;
+        }
+        .resp {
+          width: 450px;
+          height: 250px;
+        }
+        #prefooter{
+          font-size: 9pt;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 40px;
+        }
+        section{
+          height: 750px;
+        }
+        nav{
+          width: 1460px;
+          height: 640px;
+          background-size: 1460px 651px;
+        }
+        #cn1 {
+          font-size: 20pt;
+          left: -200px;
+          top:160px;
+        }
+        #cn2 {
+          font-size: 42pt;
+          left: 500px;
+          top:100px;
+        }
+        #cn3 {
+          font-size: 15pt;
+          left: 200px;
+          top:200px;
+        }
+        footer{
+          font-size: 12pt;
+          height: 100px;
+        }
+      }
+      @media (max-width:1265px){
+        #fn {
+          font-size: 15pt;
+          left: -5px;
+          top:-55px;
+        }
+        #un {
+          margin-top: 4px;
+        }
+        #log {
+          position: relative;
+          top: -50px;
+          font-size: 8pt;
+          left:500px;
+          width:560px;
+          justify-content: space-around;
+        }
+
+        #sec {
+          width: 1264px;
+          font-size: 12pt;
+          text-align: center;
+          left:-150px;
+          margin-top: -70px;
+        }
+        #sec2{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: -60px;
+        }
+        #sec4{
+          margin-top: 20px;
+        }
+        .cl {
+          font-size: 10pt;
+        }
+        .hd {
+          font-size: 12pt;
+        }
+        .resp {
+          width: 400px;
+          height: 250px;
+        }
+        #prefooter{
+          font-size: 9pt;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 40px;
+        }
+        section{
+          height: 750px;
+        }
+        nav{
+          width: 1264px;
+          height: 440px;
+          background-size: 1264px 451px;
+        }
+        #cn1 {
+          font-size: 15pt;
+          left: -130px;
+          top:100px;
+        }
+        #cn2 {
+          font-size: 30pt;
+          left: -390px;
+          top:150px;
+        }
+        #cn3 {
+          font-size: 10pt;
+          left: 570px;
+          top:120px;
+        }
+        footer{
+          font-size: 12pt;
+          height: 100px;
+        }
+      }
+      @media (max-width:1024px){
+        #fn {
+          font-size: 15pt;
+          left: 1px;
+          top:-10px;
+        }
+        #un {
+          margin-top: 4px;
+        }
+        #log {
+          position: relative;
+          top: -5px;
+          font-size: 8pt;
+          left:400px;
+          width:460px;
+          justify-content: space-around;
+        }
+
+        #sec {
+          width: 1024px;
+          font-size: 12pt;
+          text-align: center;
+          left:-150px;
+          margin-top: -70px;
+        }
+        #sec2{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: -60px;
+        }
+        #sec4{
+          margin-top: 20px;
+        }
+        .cl {
+          font-size: 10pt;
+        }
+        .hd {
+          font-size: 11pt;
+        }
+        .resp {
+          width: 300px;
+          height: 200px;
+        }
+        #prefooter{
+          font-size: 9pt;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 40px;
+        }
+        section{
+          height: 750px;
+          margin: 110px;
+        }
+        nav{
+          width: 1024px;
+          height: 440px;
+          background-size: 1024px 451px;
+        }
+        #cn1 {
+          font-size: 12pt;
+          left: -130px;
+          top:110px;
+        }
+        #cn2 {
+          font-size: 25pt;
+          left: -340px;
+          top:150px;
+        }
+        #cn3 {
+          font-size: 9pt;
+          left: 450px;
+          top:140px;
+        }
+        footer{
+          font-size: 12pt;
+          height: 100px;
+        }
+      }
+
+      @media (max-width:700px){
+        #fn {
+          font-size: 11pt;
+          left: 1px;
+          top:10px;
+        }
+        #un {
+          margin-top: 4px;
+        }
+        #log {
+          position: relative;
+          top: 5px;
+          font-size: 7pt;
+          left:140px;
+          width:400px;
+          justify-content: space-around;
+        }
+
+        #sec {
+          width: 699px;
+          font-size: 9pt;
+          text-align: center;
+          left:-70px;
+          margin-top: 50px;
+        }
+        #sec2{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: -60px;
+        }
+        #sec4{
+          margin-top: 20px;
+        }
+        .cl {
+          font-size: 8pt;
+        }
+        .hd {
+          font-size: 7pt;
+        }
+        .resp {
+          width: 200px;
+          height: 100px;
+        }
+        #prefooter{
+          font-size: 9pt;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 40px;
+        }
+        section{
+          height: 699px;
+          margin: 60px;
+          margin-bottom: -70px;
+        }
+        nav{
+          width: 699px;
+          height: 340px;
+          background-size: 699px 351px;
+        }
+        #cn1 {
+          font-size: 11pt;
+          left: -220px;
+          top:120px;
+        }
+        #cn2 {
+          font-size: 20pt;
+          left: 250px;
+          top:90px;
+        }
+        #cn3 {
+          font-size: 6.5pt;
+          left: 50px;
+          top:130px;
+        }
+        footer{
+          font-size: 12pt;
+          height: 100px;
+        }
+      }
+      @media (max-width:540px){
+        #fn {
+          font-size: 12pt;
+          left:5px;
+          top:5px;
+        }
+        #un {
+          margin-top: 1.5px;
+        }
+        #log {
+          font-size: 6.5pt;
+          left:50px;
+          top:28px;
+          width:460px;
+          justify-content: space-around;
+        }
+
+        #sec{
+          width: 360px;
+          font-size: 7pt;
+          text-align: center;
+          left:20px;
+          margin-top: 70px;
+        }
+        #sec2{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: -60px;
+        }
+        #sec4{
+          margin-top: 20px;
+        }
+        .cl {
+          font-size: 9pt;
+        }
+        .hd {
+          font-size: 6.5pt;
+        }
+        .resp {
+          width: 250px;
+          height: 150px;
+        }
+        #prefooter{
+          font-size: 7pt;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 40px;
+        }
+        section{
+          height: 850px;
+        }
+        nav{
+          width: 540px;
+          height: 640px;
+          background-size: 540px 651px;
+        }
+        #cn1 {
+          font-size: 10pt;
+          left: 200px;
+          top:160px;
+        }
+        #cn2 {
+          font-size: 22pt;
+          left: 25px;
+          top:200px;
+        }
+        #cn3 {
+          font-size: 7pt;
+          left: -179px;
+          top:250px;
+        }
+        footer{
+          font-size: 10pt;
+          height: 100px;
+        }
+      }
+      @media (max-width:360px){
         #fn {
           font-size: 15pt;
           left: -10px;
